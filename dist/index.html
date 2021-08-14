@@ -5,9 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Best Hikari Sushi</title>
     <link rel="icon" href="https://cdn.iconscout.com/icon/free/png-512/sushi-hotel-food-fastfood-emoj-symbol-30705.png">
+    <style>
+        .navbar{
+            font-size: 40px;
+            color: white;
+            background-color: black;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1;
+        }
+        .navBarButton{
+            width: 25%;
+            text-align: center;
+            transition-property: background-color;
+            transition-duration: .5s;
+        }
+        .navBarButton:hover{
+            background-color: red;
+        }
+    </style>
 </head>
 <body>
+    <nav class="navbar">
+        <div class="navBarButton homeButton">Home</div>
+        <div class="navBarButton menuButton">Menu</div>
+        <div class="navBarButton contactButton">Contact</div>
+        <div class="navBarButton orderNowButton">Order Now</div>
+    </nav>
     <div id="content">
+
     </div>
     <script src="main.js"></script>
 </body>

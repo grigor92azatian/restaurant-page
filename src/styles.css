@@ -11,17 +11,15 @@
 body{
     background-color: black;
 }
+
 #content{
-    /* display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between; */
     position: relative;
     text-align: center;
     height: 100vh;
 }
 
 h1{
+    width: 100%;
     font-family: "AlegreyaSans";
     color: black;
     font-size: 80px;
@@ -30,8 +28,11 @@ h1{
     left: 50%;
     transform: translate(-50%,-50%);
 }
-
+.hikari{
+    color: red;
+}
 img{
+    padding-top: 50px;
     height: 100%;
 }
 
