@@ -1,6 +1,8 @@
 import "./styles.css";
 import initialPageLoad from "./initial-page-load.js";
+import loadNavBar from "./nav-bar.js";
 
+loadNavBar();
 initialPageLoad();
 
 //------------------------------------------------------------------Navbar Tabs-------------------------------------------

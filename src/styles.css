@@ -31,7 +31,7 @@ h1{
 .hikari{
     color: red;
 }
-img{
+#content img{
     padding-top: 50px;
     height: 100%;
 }
@@ -42,3 +42,39 @@ p{
     font-size: 30px;
     color: white;
 }
+
+#navbar{
+    font-size: 20px;
+    color: white;
+    background-color: black;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+  }
+  #navbar img{
+      height: 50px;
+  }
+  .logo{
+    width: 25%;
+  }
+  .navBarLinks{
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    height: 100%;
+  }
+  .navBarButton{
+    width: 25%;
+    text-align: center;
+    padding-top: 12px;
+    transition-property: background-color;
+    transition-duration: .5s;
+  }
+  .navBarButton:hover{
+    background-color: red;
+  }
