@@ -18,8 +18,8 @@ export default function loadNavBar(){
     navBarButtons[0].innerText = "Home";
     navBarButtons[1].classList.add("menuButton");
     navBarButtons[1].innerText = "Menu";
-    navBarButtons[2].classList.add("contactButton");
-    navBarButtons[2].innerText = "Contact";
+    navBarButtons[2].classList.add("infoButton");
+    navBarButtons[2].innerText = "Info";
     navBarButtons[3].classList.add("orderNowButton");
     navBarButtons[3].innerText = "Order Now";
 
