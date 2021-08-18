@@ -9,7 +9,7 @@ export default function loadNavBar(){
 
     let navBarButtons = [];
     for(let i=0;i<4;i++){
-        let button = document.createElement("div");
+        let button = document.createElement("a");
         button.className = "navBarButton";
         navBarButtons.push(button);
     }
@@ -22,6 +22,7 @@ export default function loadNavBar(){
     navBarButtons[2].innerText = "Info";
     navBarButtons[3].classList.add("orderNowButton");
     navBarButtons[3].innerText = "Order Now";
+    navBarButtons[3].setAttribute("href", "https://direct.chownow.com/order/25088/locations/37077");
 
     navBarButtons.forEach(button => {
         navBarLinks.appendChild(button);
