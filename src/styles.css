@@ -11,14 +11,12 @@
 body{
     background-color: black;
 }
-
 #content{
     position: relative;
     text-align: center;
     height: 100vh;
 }
-
-h1{
+.restaurantName{
     width: 100%;
     font-family: "AlegreyaSans";
     color: black;
@@ -35,14 +33,12 @@ h1{
     padding-top: 50px;
     height: 100%;
 }
-
-p{
+.initialPageText{
     height: 300px;
     padding-top: 100px;
     font-size: 30px;
     color: white;
 }
-
 #navbar{
     font-size: 20px;
     color: white;
@@ -56,25 +52,25 @@ p{
     width: 100%;
     z-index: 1;
   }
-  #navbar img{
-      height: 50px;
-  }
-  .logo{
+#navbar img{
+    height: 50px;
+}
+.logo{
     width: 25%;
-  }
-  .navBarLinks{
+}
+.navBarLinks{
     display: flex;
     flex-direction: row;
     width: 50%;
     height: 100%;
-  }
-  .navBarButton{
+}
+.navBarButton{
     width: 25%;
     text-align: center;
     padding-top: 12px;
     transition-property: background-color;
     transition-duration: .5s;
-  }
-  .navBarButton:hover{
+}
+.navBarButton:hover{
     background-color: red;
-  }
+}
