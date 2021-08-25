@@ -1,0 +1,32 @@
+name,in,out
+
+
+        california roll
+            backed scallop mixed w/ crabmeat
+    
+        california roll w/ eel
+            avocado
+    
+        california roll
+            eel, avocado
+    
+        california roll
+            salmon (whole roll baked)
+    baked spicy salmon
+        california roll
+            spicy salmon, whole roll baked
+    snow white roll
+        crabmeat, avocado, cream cheese
+            escolar, whole roll baked
+    nichelle
+        crabmeat, tilapia, salmon wrap
+            scallop
+    baked crafish
+        california roll
+            baked crawfish mixed w/ crabmeat
+    volcano
+        california roll,baked spicy tuna
+
+let names = [baked scallop, caterpillar, dragon, baked salmon, ];
+let inside = [];
+let outside = [];

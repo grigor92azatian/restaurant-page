@@ -3,7 +3,7 @@ import initialPageLoad from "./initial-page-load.js";
 import loadNavBar from "./nav-bar.js";
 
 loadNavBar();
-initialPageLoad();
+// initialPageLoad();
 
 //------------------------------------------------------------------Navbar Tab Click Event Listeners-------------------------------------------
 let homeButton = document.querySelector(".homeButton");
