@@ -16,6 +16,23 @@
             background-repeat: no-repeat;
             background-size: cover;
         }
+        #content h2{
+            font-size: 50px;
+        }
+        .streetAddress, .businessHours, .phoneNumber{
+            font-size: 40px;
+        }
+        .mediaLinkSection{
+            display: flex;
+            flex-direction: row;
+            border: 1px solid red;
+            align-items: center;
+            justify-content: space-around;
+        }
+        .mediaLinkSection a{
+            height: 100px;
+            width: 100px;
+        }
     </style>
 </head>
 <body>
@@ -39,12 +56,15 @@
         </div>
         <div class="contactUsSection">
             <h2>Contact Us</h2>
-            phone number: 818-998-8080
+            <section class="phoneNumber">818-998-8080</section>
         </div>
         <div class="mediaSection">
             <h2>Check Us Out</h2>
-            Yelp - 
-            Instagram - 
+            <div class="mediaLinkSection">
+                <a href="https://www.yelp.com/biz/hikari-sushi-chatsworth-2?utm_campaign=www_business_share_popup&utm_medium=copy_link&utm_source=(direct)
+                "><img src="../src/favicon.png" alt="yelp link"></a>
+                <a href="https://www.instagram.com/hikarisushichatsworth/?hl=en"><img src="../src/favicon.png" alt="instagram logo"></a>
+            </div> 
         </div>
     </div>
     <script src="main.js"></script>
