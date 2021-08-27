@@ -34,7 +34,7 @@ body{
 .bannerPicContainer{
     background-color: white;
 }
-.bannerPicContainer img{
+.homePageBannerPic{
     /* height: 100%; */
     width: 100%;
     opacity: .75;

@@ -9,6 +9,7 @@ export default function initialPageLoad(){
 
     bannerPic.setAttribute("src", "https://cdn2.lamag.com/wp-content/uploads/sites/6/2018/10/best-ayce-sushi-los-angeles-county-Nattapol-Poonpiriya-EyeEm-getty-images-1-1068x712.jpg");
     bannerPic.setAttribute("alt", "sushi-roll-photo");
+    bannerPic.setAttribute("class", "homePageBannerPic");
     
     restaurantName.className = "restaurantName";
     restaurantName.innerHTML = "<span class='hikari'>Hikari</span> Sushi";
