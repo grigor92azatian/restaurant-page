@@ -7,6 +7,8 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    cursor: default;
+    font-family: sans-serif;
 }
 body{
     background-color: black;
@@ -29,6 +31,7 @@ body{
     transform: translate(-50%,-50%);
 }
 .hikari{
+    font-family: "AlegreyaSans";
     color: red;
 }
 .bannerPicContainer{
