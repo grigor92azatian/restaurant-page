@@ -1,14 +1,21 @@
 import "./styles.css";
 import initialPageLoad from "./initial-page-load.js";
 import loadNavBar from "./nav-bar.js";
+import contactPage from "./info-tab.js";
 
 loadNavBar();
-// initialPageLoad();
+initialPageLoad();
+
 
 //------------------------------------------------------------------Navbar Tab Click Event Listeners-------------------------------------------
+
+
 let homeButton = document.querySelector(".homeButton");
     homeButton.addEventListener("click", function(){
         //function that loads home page
+        let documentContentDiv = document.querySelector("#content");
+        documentContentDiv.innerHTML = "";
+        initialPageLoad();
     });
 let menuButton = document.querySelector(".menuButton");
     menuButton.addEventListener("click", function(){
@@ -17,10 +24,7 @@ let menuButton = document.querySelector(".menuButton");
 let infoButton = document.querySelector(".infoButton");
     infoButton.addEventListener("click", function(){
         //function that loads info page
-    });
-let orderNowButton = document.querySelector(".orderNowButton");
-    orderNowButton.addEventListener("click", function(){
-        //function that loads order now page
+        contactPage();
     });
 //Home
 

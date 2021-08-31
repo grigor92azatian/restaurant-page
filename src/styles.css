@@ -83,3 +83,37 @@ body{
 .navBarButton:hover{
     background-color: red;
 }
+.bannerPhotoSection{
+    height: 75vh;
+    width: 100%;
+    background-image: url("https://s3-media0.fl.yelpcdn.com/bphoto/xwzknj9lE5F4P3ue9QAUAg/o.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.infoSectionContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    font-size: 40px;
+}
+.infoSection{
+    height: 400px;
+    width: 400px;
+    background-color: grey;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.info{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.infoSubTitle{
+    font-size: 60px;
+    justify-self: flex-start;
+    margin-bottom: 100px;
+}
