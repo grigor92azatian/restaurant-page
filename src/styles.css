@@ -9,6 +9,7 @@
     box-sizing: border-box;
     cursor: default;
     font-family: sans-serif;
+    caret-color: transparent;
 }
 body{
     background-color: black;
@@ -119,4 +120,8 @@ body{
     font-size: 60px;
     justify-self: flex-start;
     margin-bottom: 100px;
+}
+.directions{
+    cursor: pointer;
+    width: auto;
 }
