@@ -4,7 +4,7 @@ import loadNavBar from "./nav-bar.js";
 import contactPage from "./info-tab.js";
 
 loadNavBar();
-initialPageLoad();
+// initialPageLoad();
 
 
 //------------------------------------------------------------------Navbar Tab Click Event Listeners-------------------------------------------
