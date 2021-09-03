@@ -1,6 +1,6 @@
 @font-face {
     font-family: "AlegreyaSans";
-    src: url("./AlegreyaSansSC-Black.woff") format("woff");
+    src: url("./fonts/AlegreyaSansSC-Black.woff") format("woff");
 }
 
 *{
@@ -21,6 +21,7 @@ body{
     text-align: center;
     height: 100vh;
 }
+/* -------------------------------------------------------------------Home Page--------------------------------------------------------------------- */
 .restaurantName{
     width: 100%;
     font-family: "AlegreyaSans";
@@ -49,6 +50,7 @@ body{
     font-size: 30px;
     color: white;
 }
+/* -------------------------------------------------------------------Nav Bar--------------------------------------------------------------------- */
 #navbar{
     font-size: 20px;
     color: white;
@@ -87,6 +89,7 @@ body{
 .navBarButton:hover{
     background-color: red;
 }
+/* -------------------------------------------------------------------Info Page--------------------------------------------------------------------- */
 .bannerPhotoSection{
     height: 75vh;
     width: 100%;
@@ -124,4 +127,56 @@ body{
 .directions{
     cursor: pointer;
     width: auto;
+}
+
+/* -----------------------------------------------------Menu Page-------------------------------------------------------------- */
+.menus{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h1{
+    font-size: 50px;
+}
+.submenu{
+    border: 4px solid grey;
+    width: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+.subMenuTitle{
+    font-size: 30px;
+}
+.menuContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.menuItemContainer{
+    padding: 10px;
+    background-color: grey;
+    width: 275px;
+    height: 275px;
+    margin: 20px;
+}
+.itemName{
+    
+}
+.itemPicture{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 150px;
+    height: 150px;
+}
+.itemDescription{
+    text-align: left;
+    font-size: 15px;
+}
+b{
+    color: black;
+    font-weight: bold;
 }
