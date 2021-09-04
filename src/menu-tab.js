@@ -1,12 +1,364 @@
 export default function menuPage(){
-
+//---------------------------------Sushi Roll Arrays--------------------
+    let bakedRolls = [
+        {
+            name:"Baked Scallop Roll",
+            inside:"California roll",
+            outside:"Baked scallop mixed w/ crabmeat"
+        },
+        {
+            name: "Caterpillar Roll",
+            inside: "California roll w/ eel",
+            outside: "Avocado"
+        },
+        {
+            name:"Dragon Roll",
+            inside:"California roll",
+            outside:"eel, avocado"
+        },
+        {
+            name:"Baked Salmon Roll",
+            inside:"California roll",
+            outside:"salmon (whole roll baked)"
+        },
+        {
+            name:"Spicy Baked Salmon Roll",
+            inside:"california roll",
+            outside:"spicy salmon, whole roll baked"
+        },
+        {
+            name:"Snow White Roll",
+            inside:"crabmeat, avocado, cream cheese",
+            outside:"escolar, whole roll baked"
+        },
+        {
+            name:"Nichelle Roll",
+            inside:"crabmeat, tilapia, salmon wrap",
+            outside:"scallop"
+        },
+        {
+            name:"Baked Crawfish Roll",
+            inside:"California roll",
+            outside:"baked crawfish mixed w/ crabmeat"
+        },
+        {
+            name:"Volcano Roll",
+            inside:"California roll",
+            outside:"baked spicy tuna"
+        }
+    ];
+    let freshRolls = [
+        {
+            name: "Melt in Your Mouth Roll",
+            inside: "crabmeat, avocado, cream cheese",
+            outside: "seared salmon with house mayo, jalapeno"
+        },
+        {
+            name:"Goldfish Roll",
+            inside: "spicy tuna, cucumber",
+            outside: "yellowtail, avocado, lemon"
+        },
+        {
+            name:"Candy Cane Roll",
+            inside: "no rice, soy paper, cragmeat, spicy tuna, avocado, cucumber",
+            outside: "salmon, tuna"
+        },
+        {
+            name:"Washington Roll",
+            inside: "california roll",
+            outside: "fresh salmon"
+        },
+        {
+            name:"Red Dragon Roll",
+            inside: "California roll",
+            outside: "spicy tuna, crunch"
+        },
+        {
+            name:"Sunkist Roll",
+            inside: "spicy tuna, cucumber",
+            outside: "salmon, lemon slice"
+        },
+        {
+            name:"Ninja Roll",
+            inside: "spicy tuna, cream cheese",
+            outside: "salmon, shrimp, jalapeno"
+        },
+        {
+            name:"Yellowtail Delight Roll",
+            inside: "spicy tuna, cucumber",
+            outside: "fresh yellowtail, jalapeno"
+        },
+        {
+            name:"Cajun Tuna Roll",
+            inside: "spicy tuna, cucumber",
+            outside: "seared cajun tuna"
+        },
+        {
+            name:"Sexy Roll",
+            inside: "soy paper,spicy scallop,cucumber",
+            outside:"tuna, salmon, avocado, jalapeno"
+        },
+        {
+            name:"Seared Escolar Roll",
+            inside:"spicy tuna, cucumber",
+            outside:"seared escolar, red onion"
+        },
+        {
+            name:"Aloha Roll",
+            inside:"spicy tuna, cucumber, cilantro",
+            outside:"seared albacore, jalapeno"
+        },
+        {
+            name:"Jessica Albacore Roll",
+            inside:"spicy tuna, albacore wrap",
+            outside:"crunch"
+        },
+        {
+            name:"Albacore Delight Roll",
+            inside:"spicy albacore, cucumber",
+            outside:"seared albacore"
+        },
+        {
+            name:"Chatsworth Roll",
+            inside:"fresh assorted sashimi w/ soy paper",
+            outside:"avocado"
+        },
+        {
+            name:"Fire Roll",
+            inside:"spicy tuna, cucumber, cilantro",
+            outside:"spicy crabmeat, jalapeno"
+        },
+        {
+            name:"Giant Roll",
+            inside:"California roll",
+            outside:"salmon, spicy tuna, scallop"
+        },
+        {
+            name:"Judy Special Roll",
+            inside:"crabmeat, cucumber, shrimp",
+            outside:"avocado"
+        },
+        {
+            name:"Magnolia Roll",
+            inside:"spicy crabmeat",
+            outside:"salmon wrap"
+        },
+        {
+            name:"Stuffed Tomato Roll",
+            inside:"scallop, spicy crabmeat",
+            outside:"fresh tuna wrap"
+        },
+        {
+            name:"Hawaiian Roll",
+            inside:"California roll",
+            outside:"fresh tuna, avocado"
+        },
+        {
+            name:"Honeymoon Roll",
+            inside:"shrimp, avocado, cucumber w/ crabmeat wrap",
+            outside:"salmon"
+        }
+    ];
+    let tempuraRolls = [
+        {
+            name: "Orange Caramel Roll",
+            inside: "spicy crab, avocado, cucumber",
+            outside: "salmon, crunch"
+        },
+        {
+            name: "Ex-Boyfriend Roll",
+            inside: "no rice, shrimp tempura, avocado, cucumber wrapped in crabmeat",
+            outside: "seared cajun tuna, jalapeno"
+        },
+        {
+            name: "Black Widow Roll",
+            inside: "spicy tuna, cucumber, shrimp tempura",
+            outside: "eel, avocado"
+        },
+        {
+            name: "Mexi-Cali Roll",
+            inside: "shrimp, spicy crab, cucumber",
+            outside: "avocado, crunch"
+        },
+        {
+            name: "Salmon Nacho",
+            inside: "deep friend salmon w/ crabmeat on top, no rice"
+        },
+        {
+            name: "Golden Tiger Roll",
+            inside: "creamcheese, avocado, shrimp tempura",
+            outside: "spicy crabmeat"
+        },
+        {
+            name: "Las Vegas Roll",
+            inside: "spicy salmon, creamcheese",
+            outside: "whole fried"
+        },
+        {
+            name: "California Deep Roll",
+            inside: "California roll",
+            outside: "whole fried"
+        },
+        {
+            name: "Maui Roll",
+            inside: "spicy crabmeat, cucumber, shrimp tempura",
+            outside: "seared cajun tuna, red onion"
+        },
+        {
+            name: "Ultimate Salmon Roll",
+            inside: "spicy tuna, cucumber, shrimp tempura",
+            outside: "seared salmon w/ house mayo"
+        },
+        {
+            name: "Spicy Tuna Deep Roll",
+            inside: "spicy tuna, avocado",
+            outside: "whole fried"
+        },
+        {
+            name: "Crispy Rice Spicy Salmon",
+            inside: "tempura rice w/ spicy salmon and jalapeno"
+        },
+        {
+            name: "Hikari Roll",
+            inside: "shrimp tempura, spicy tuna, cucumber",
+            outside: "white fish, white onion, jalapeno"
+        },
+        {
+            name: "Three Amigo Roll",
+            inside: "California roll",
+            outside: "seared albacore, spicy tuna, deep fried onion"
+        },
+        {
+            name: "Philly Deep Roll",
+            inside: "fresh salmon, avocado, creamcheese",
+            outside: "whole fried"
+        },
+        {
+            name: "Popcorn Scallop Roll",
+            inside: "California roll",
+            outside: "deep fried scallop"
+        },
+        {
+            name: "Special Crunch Roll",
+            inside: "crabmeat, cucumber, crunch tempura, assorted fish",
+            outside: "albacore"
+        },
+        {
+            name: "Crispy Rice Spicy Tuna",
+            inside: "tempura rice w/ spicy tuna"
+        },
+        {
+            name: "Jennifer Roll",
+            inside: "spicy crabmeat, cucumber, shrimp tempura",
+            outside: "fresh tuna, salmon"
+        },
+        {
+            name: "Black Tiger Roll",
+            inside: "cucumber, spicy crabmeat, shrimp tempura",
+            outside: "eel, avocado, crunch"
+        },
+        {
+            name: "Escolar Special Roll",
+            inside: "crabmeat, cucumber, crunch, tempura, assorted fish",
+            outside: "seared escolar"
+        },
+        {
+            name: "Tiger Roll",
+            inside: "spicy tuna, shrimp tempura, cucumber, avocado",
+            outside: "crunch"
+        },
+        {
+            name: "Crunch Roll",
+            inside: "crabmeat, cucumber, avocado, shrimp tempura",
+            outside: "crunch"
+        },
+        {
+            name: "Crunch Roll Deep",
+            inside: "crabmeat, cucumber, avocado, shrimp tempura",
+            outside: "whole roll fried"
+        },
+        {
+            name: "Popcorn Crawfish Roll",
+            inside: "California roll",
+            outside: "deep fried crawfish"
+        },
+        {
+            name: "Shrimp Boat",
+            inside: "shrimp, crabmeat",
+            outside: "deep fried"
+        },
+        {
+            name: "Bora Bora Roll",
+            inside: "shrimp tempura, cucumber, crabmeat",
+            outside: "spicy crabmeat"
+        },
+        {
+            name: "Salmon Lover Roll",
+            inside: "shrimp tempura, crabmeat, cucumber",
+            outside: "fresh salmon"
+        },
+        {
+            name: "Heart Attack Roll",
+            inside: "albacore, spicy tuna, jalapeno, creamcheese",
+            outside: "whole fried"
+        },
+        {
+            name: "Fish Chip",
+            inside: "deep fried white fish w/ spicy crabmeat"
+        },
+        {
+            name: "In and Out Shrimp Roll",
+            inside: "crabmeat, cucumber, shrimp tempura",
+            outside: "shrimp, avocado"
+        },
+        {
+            name: "Hot Night Roll",
+            inside: "crabmeat, cucumber, shrimp tempura",
+            outside: "spicy tuna, crunch"
+        },
+        {
+            name: "John Roll",
+            inside: "deep fried wonton skin",
+            outside: "assorted fish on top"
+        },
+        {
+            name: "Super Mexican Roll",
+            inside: "crabmeat, cucumber, shrimp tempura",
+            outside: "avocado"
+        },
+        {
+            name: "Spider Roll",
+            inside: "softshell crab, cucumber, avocado, crabmeat, gobo",
+            outside: "crunch"
+        }
+    ];
     let pageContent = document.querySelector("#content");
     let menuPageContainer = document.createElement("div");
         menuPageContainer.className = "menus";
     let menuPageHeader = document.createElement("h1");
         menuPageHeader.innerText = "Menu";
-    
+    let subMenusArray = [];
+    let subMenuTitlesArray = [];
+    let menuContainerArray = [];
+    for(let i=0;i<3;i++){
+        let subMenu = document.createElement("div");
+        let subMenuTitle = document.createElement("div");
+        let menuContainer = document.createElement("div");
+        subMenu.className = "subMenu";
+        subMenuTitle.className = "subMenuTitle";
+        menuContainer.className = "menuContainer";
 
+        subMenusArray.push(subMenu);
+        subMenuTitlesArray.push(subMenuTitle);
+        menuContainerArray.push(menuContainer);
+    }
+    subMenuTitlesArray[0].innerText = "Baked Rolls";
+    subMenuTitlesArray[1].innerText = "Fresh Rolls";
+    subMenuTitlesArray[2].innerText = "Tempura Rolls";
+
+    for(let j=0;j<subMenusArray.length;j++){
+        subMenusArray[j].appendChild(subMenuTitlesArray[j]);
+    }
 }
 
 
@@ -23,338 +375,7 @@ let kidsMeal = ["Chicken Teriyaki", "Beef Teriyaki", "Salmon Teriyaki", "Chicken
 let alcohol = ["Beer (Sapporo, Asahi, Kirin, Kirin Light)", "Hot Sake", "Cold Sake", "Soju", "Wine"]
 let softDrinks = ["Coke, Diet Coke, Sprite, Fanta Orange", "Iced Tea, Lemonade", "Orange Juice, Apple Juice, Strawberry Lemonade", "Japanese Hot Green Tea, Japanese Iced Green Tea", "Perrier"]
 let dessert = ["Japanese Green Tea Ice Cream", "Mochi Ice Cream (Green Tea, Mango, Strawberry)"]
-let bakedRolls = [
-    {
-        name:"Baked Scallop Roll",
-        inside:"California roll",
-        outside:"Baked scallop mixed w/ crabmeat"
-    },
-    {
-        name: "Caterpillar Roll",
-        inside: "California roll w/ eel",
-        outside: "Avocado"
-    },
-    {
-        name:"Dragon Roll",
-        inside:"California roll",
-        outside:"eel, avocado"
-    },
-    {
-        name:"Baked Salmon Roll",
-        inside:"California roll",
-        outside:"salmon (whole roll baked)"
-    },
-    {
-        name:"Spicy Baked Salmon Roll",
-        inside:"california roll",
-        outside:"spicy salmon, whole roll baked"
-    },
-    {
-        name:"Snow White Roll",
-        inside:"crabmeat, avocado, cream cheese",
-        outside:"escolar, whole roll baked"
-    },
-    {
-        name:"Nichelle Roll",
-        inside:"crabmeat, tilapia, salmon wrap",
-        outside:"scallop"
-    },
-    {
-        name:"Baked Crawfish Roll",
-        inside:"California roll",
-        outside:"baked crawfish mixed w/ crabmeat"
-    },
-    {
-        name:"Volcano Roll",
-        inside:"California roll",
-        outside:"baked spicy tuna"
-    }
-];
-let freshRolls = [
-    {
-        name: "Melt in Your Mouth Roll",
-        inside: "crabmeat, avocado, cream cheese",
-        outside: "seared salmon with house mayo, jalapeno"
-    },
-    {
-        name:"Goldfish Roll",
-        inside: "spicy tuna, cucumber",
-        outside: "yellowtail, avocado, lemon"
-    },
-    {
-        name:"Candy Cane Roll",
-        inside: "no rice, soy paper, cragmeat, spicy tuna, avocado, cucumber",
-        outside: "salmon, tuna"
-    },
-    {
-        name:"Washington Roll",
-        inside: "california roll",
-        outside: "fresh salmon"
-    },
-    {
-        name:"Red Dragon Roll",
-        inside: "California roll",
-        outside: "spicy tuna, crunch"
-    },
-    {
-        name:"Sunkist Roll",
-        inside: "spicy tuna, cucumber",
-        outside: "salmon, lemon slice"
-    },
-    {
-        name:"Ninja Roll",
-        inside: "spicy tuna, cream cheese",
-        outside: "salmon, shrimp, jalapeno"
-    },
-    {
-        name:"Yellowtail Delight Roll",
-        inside: "spicy tuna, cucumber",
-        outside: "fresh yellowtail, jalapeno"
-    },
-    {
-        name:"Cajun Tuna Roll",
-        inside: "spicy tuna, cucumber",
-        outside: "seared cajun tuna"
-    },
-    {
-        name:"Sexy Roll",
-        inside: "soy paper,spicy scallop,cucumber",
-        outside:"tuna, salmon, avocado, jalapeno"
-    },
-    {
-        name:"Seared Escolar Roll",
-        inside:"spicy tuna, cucumber",
-        outside:"seared escolar, red onion"
-    },
-    {
-        name:"Aloha Roll",
-        inside:"spicy tuna, cucumber, cilantro",
-        outside:"seared albacore, jalapeno"
-    },
-    {
-        name:"Jessica Albacore Roll",
-        inside:"spicy tuna, albacore wrap",
-        outside:"crunch"
-    },
-    {
-        name:"Albacore Delight Roll",
-        inside:"spicy albacore, cucumber",
-        outside:"seared albacore"
-    },
-    {
-        name:"Chatsworth Roll",
-        inside:"fresh assorted sashimi w/ soy paper",
-        outside:"avocado"
-    },
-    {
-        name:"Fire Roll",
-        inside:"spicy tuna, cucumber, cilantro",
-        outside:"spicy crabmeat, jalapeno"
-    },
-    {
-        name:"Giant Roll",
-        inside:"California roll",
-        outside:"salmon, spicy tuna, scallop"
-    },
-    {
-        name:"Judy Special Roll",
-        inside:"crabmeat, cucumber, shrimp",
-        outside:"avocado"
-    },
-    {
-        name:"Magnolia Roll",
-        inside:"spicy crabmeat",
-        outside:"salmon wrap"
-    },
-    {
-        name:"Stuffed Tomato Roll",
-        inside:"scallop, spicy crabmeat",
-        outside:"fresh tuna wrap"
-    },
-    {
-        name:"Hawaiian Roll",
-        inside:"California roll",
-        outside:"fresh tuna, avocado"
-    },
-    {
-        name:"Honeymoon Roll",
-        inside:"shrimp, avocado, cucumber w/ crabmeat wrap",
-        outside:"salmon"
-    }
-];
-let tempuraRolls = [
-    {
-        name: "Orange Caramel Roll",
-        inside: "spicy crab, avocado, cucumber",
-        outside: "salmon, crunch"
-    },
-    {
-        name: "Ex-Boyfriend Roll",
-        inside: "no rice, shrimp tempura, avocado, cucumber wrapped in crabmeat",
-        outside: "seared cajun tuna, jalapeno"
-    },
-    {
-        name: "Black Widow Roll",
-        inside: "spicy tuna, cucumber, shrimp tempura",
-        outside: "eel, avocado"
-    },
-    {
-        name: "Mexi-Cali Roll",
-        inside: "shrimp, spicy crab, cucumber",
-        outside: "avocado, crunch"
-    },
-    {
-        name: "Salmon Nacho",
-        inside: "deep friend salmon w/ crabmeat on top, no rice"
-    },
-    {
-        name: "Golden Tiger Roll",
-        inside: "creamcheese, avocado, shrimp tempura",
-        outside: "spicy crabmeat"
-    },
-    {
-        name: "Las Vegas Roll",
-        inside: "spicy salmon, creamcheese",
-        outside: "whole fried"
-    },
-    {
-        name: "California Deep Roll",
-        inside: "California roll",
-        outside: "whole fried"
-    },
-    {
-        name: "Maui Roll",
-        inside: "spicy crabmeat, cucumber, shrimp tempura",
-        outside: "seared cajun tuna, red onion"
-    },
-    {
-        name: "Ultimate Salmon Roll",
-        inside: "spicy tuna, cucumber, shrimp tempura",
-        outside: "seared salmon w/ house mayo"
-    },
-    {
-        name: "Spicy Tuna Deep Roll",
-        inside: "spicy tuna, avocado",
-        outside: "whole fried"
-    },
-    {
-        name: "Crispy Rice Spicy Salmon",
-        inside: "tempura rice w/ spicy salmon and jalapeno"
-    },
-    {
-        name: "Hikari Roll",
-        inside: "shrimp tempura, spicy tuna, cucumber",
-        outside: "white fish, white onion, jalapeno"
-    },
-    {
-        name: "Three Amigo Roll",
-        inside: "California roll",
-        outside: "seared albacore, spicy tuna, deep fried onion"
-    },
-    {
-        name: "Philly Deep Roll",
-        inside: "fresh salmon, avocado, creamcheese",
-        outside: "whole fried"
-    },
-    {
-        name: "Popcorn Scallop Roll",
-        inside: "California roll",
-        outside: "deep fried scallop"
-    },
-    {
-        name: "Special Crunch Roll",
-        inside: "crabmeat, cucumber, crunch tempura, assorted fish",
-        outside: "albacore"
-    },
-    {
-        name: "Crispy Rice Spicy Tuna",
-        inside: "tempura rice w/ spicy tuna"
-    },
-    {
-        name: "Jennifer Roll",
-        inside: "spicy crabmeat, cucumber, shrimp tempura",
-        outside: "fresh tuna, salmon"
-    },
-    {
-        name: "Black Tiger Roll",
-        inside: "cucumber, spicy crabmeat, shrimp tempura",
-        outside: "eel, avocado, crunch"
-    },
-    {
-        name: "Escolar Special Roll",
-        inside: "crabmeat, cucumber, crunch, tempura, assorted fish",
-        outside: "seared escolar"
-    },
-    {
-        name: "Tiger Roll",
-        inside: "spicy tuna, shrimp tempura, cucumber, avocado",
-        outside: "crunch"
-    },
-    {
-        name: "Crunch Roll",
-        inside: "crabmeat, cucumber, avocado, shrimp tempura",
-        outside: "crunch"
-    },
-    {
-        name: "Crunch Roll Deep",
-        inside: "crabmeat, cucumber, avocado, shrimp tempura",
-        outside: "whole roll fried"
-    },
-    {
-        name: "Popcorn Crawfish Roll",
-        inside: "California roll",
-        outside: "deep fried crawfish"
-    },
-    {
-        name: "Shrimp Boat",
-        inside: "shrimp, crabmeat",
-        outside: "deep fried"
-    },
-    {
-        name: "Bora Bora Roll",
-        inside: "shrimp tempura, cucumber, crabmeat",
-        outside: "spicy crabmeat"
-    },
-    {
-        name: "Salmon Lover Roll",
-        inside: "shrimp tempura, crabmeat, cucumber",
-        outside: "fresh salmon"
-    },
-    {
-        name: "Heart Attack Roll",
-        inside: "albacore, spicy tuna, jalapeno, creamcheese",
-        outside: "whole fried"
-    },
-    {
-        name: "Fish Chip",
-        inside: "deep fried white fish w/ spicy crabmeat"
-    },
-    {
-        name: "In and Out Shrimp Roll",
-        inside: "crabmeat, cucumber, shrimp tempura",
-        outside: "shrimp, avocado"
-    },
-    {
-        name: "Hot Night Roll",
-        inside: "crabmeat, cucumber, shrimp tempura",
-        outside: "spicy tuna, crunch"
-    },
-    {
-        name: "John Roll",
-        inside: "deep fried wonton skin",
-        outside: "assorted fish on top"
-    },
-    {
-        name: "Super Mexican Roll",
-        inside: "crabmeat, cucumber, shrimp tempura",
-        outside: "avocado"
-    },
-    {
-        name: "Spider Roll",
-        inside: "softshell crab, cucumber, avocado, crabmeat, gobo",
-        outside: "crunch"
-    }
-];
+
 Sushi rolls
 
     Regular Rolls
