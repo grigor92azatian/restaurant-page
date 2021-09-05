@@ -1,6 +1,6 @@
 export default function menuPage(){
 //---------------------------------Sushi Roll Arrays--------------------
-    let bakedRolls = [
+    let bakedRollsArray = [
         {
             name:"Baked Scallop Roll",
             inside:"California roll",
@@ -47,7 +47,7 @@ export default function menuPage(){
             outside:"baked spicy tuna"
         }
     ];
-    let freshRolls = [
+    let freshRollsArray = [
         {
             name: "Melt in Your Mouth Roll",
             inside: "crabmeat, avocado, cream cheese",
@@ -159,7 +159,7 @@ export default function menuPage(){
             outside:"salmon"
         }
     ];
-    let tempuraRolls = [
+    let tempuraRollsArray = [
         {
             name: "Orange Caramel Roll",
             inside: "spicy crab, avocado, cucumber",
@@ -340,6 +340,7 @@ export default function menuPage(){
     let subMenusArray = [];
     let subMenuTitlesArray = [];
     let menuContainerArray = [];
+    let menuItemContainerArray = [];
     for(let i=0;i<3;i++){
         let subMenu = document.createElement("div");
         let subMenuTitle = document.createElement("div");
@@ -359,6 +360,21 @@ export default function menuPage(){
     for(let j=0;j<subMenusArray.length;j++){
         subMenusArray[j].appendChild(subMenuTitlesArray[j]);
     }
+
+    for(let k=0;k<(bakedRollsArray.length+freshRollsArray.length+tempuraRollsArray.length);k++){
+        let menuItemContainer = document.createElement("div");
+            menuItemContainer.className = "menuItemContainer";
+        let itemName = document.createElement("h3");
+            itemName.classList.add("itemName", "item"+k+"Name");
+        let itemPicture = document.createElement("img");
+            itemPicture.classList.add("itemPicture", "item"+k+"Picture");
+        let itemDescription = document.createElement("div");
+            itemDescription.classList.add("itemDescription", "item"+k+"Description");
+        menuItemContainer.append(itemName, itemPicture, itemDescription);
+        menuItemContainerArray.push(menuItemContainer);
+    }
+    //append proper number of menuItemContainer's to each menuContainer based on the number of items contained within the sushi roll arrays
+    
 }
 
 

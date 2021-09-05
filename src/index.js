@@ -2,10 +2,11 @@ import "./styles.css";
 import initialPageLoad from "./initial-page-load.js";
 import loadNavBar from "./nav-bar.js";
 import contactPage from "./info-tab.js";
+import menuPage from "./menu-tab.js";
 
 loadNavBar();
 // initialPageLoad();
-
+menuPage();
 
 //------------------------------------------------------------------Navbar Tab Click Event Listeners-------------------------------------------
 
