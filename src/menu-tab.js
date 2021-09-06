@@ -337,6 +337,7 @@ export default function menuPage(){
         menuPageContainer.className = "menus";
     let menuPageHeader = document.createElement("h1");
         menuPageHeader.innerText = "Menu";
+        menuPageContainer.appendChild(menuPageHeader);
     let subMenusArray = [];
     let subMenuTitlesArray = [];
     let menuContainerArray = [];
@@ -361,29 +362,69 @@ export default function menuPage(){
         subMenusArray[j].appendChild(subMenuTitlesArray[j]);
     }
 
-    for(let k=0;k<(bakedRollsArray.length+freshRollsArray.length+tempuraRollsArray.length);k++){
+    // for(let k=0;k<(bakedRollsArray.length+freshRollsArray.length+tempuraRollsArray.length);k++){
+    //     let menuItemContainer = document.createElement("div");
+    //         menuItemContainer.className = "menuItemContainer";
+    //     let itemName = document.createElement("h3");
+    //         itemName.classList.add("itemName", "item"+k+"Name");
+    //     let itemPicture = document.createElement("img");
+    //         itemPicture.classList.add("itemPicture", "item"+k+"Picture");
+    //     let itemDescription = document.createElement("div");
+    //         itemDescription.classList.add("itemDescription", "item"+k+"Description");
+    //     menuItemContainer.append(itemName, itemPicture, itemDescription);
+    //     menuItemContainerArray.push(menuItemContainer);
+    // }
+//-----------------------------------transfer data from array of objects into html elements------------------------------
+    for(let l=0;l<bakedRollsArray.length;l++){
         let menuItemContainer = document.createElement("div");
             menuItemContainer.className = "menuItemContainer";
         let itemName = document.createElement("h3");
-            itemName.classList.add("itemName", "item"+k+"Name");
+            itemName.classList.add("itemName", "bakedRoll"+l);
+            itemName.innerText = bakedRollsArray[l].name;
         let itemPicture = document.createElement("img");
-            itemPicture.classList.add("itemPicture", "item"+k+"Picture");
+            itemPicture.classList.add("itemPicture", "bakedRoll"+l+"Picture");
         let itemDescription = document.createElement("div");
-            itemDescription.classList.add("itemDescription", "item"+k+"Description");
+            itemDescription.classList.add("itemDescription", "bakedRoll"+l+"Description");
+            itemDescription.innerHTML = "<b>Inside:</b>"+bakedRollsArray[l].inside+"<br><b>Outside:</b>"+bakedRollsArray[l].outside;
         menuItemContainer.append(itemName, itemPicture, itemDescription);
         menuItemContainerArray.push(menuItemContainer);
-    }
-    //append proper number of menuItemContainer's to each menuContainer based on the number of items contained within the sushi roll arrays
-    for(let l=0;l<bakedRollsArray.length;l++){
-        menuContainerArray[0].appendChild(menuItemContainerArray.shift());
+        menuContainerArray[0].appendChild(menuItemContainer);
     }
     for(let m=0;m<freshRollsArray.length;m++){
-        menuContainerArray[1].appendChild(menuItemContainerArray.shift());
+        let menuItemContainer = document.createElement("div");
+            menuItemContainer.className = "menuItemContainer";
+        let itemName = document.createElement("h3");
+            itemName.classList.add("itemName", "freshRoll"+m);
+            itemName.innerText = freshRollsArray[m].name;
+        let itemPicture = document.createElement("img");
+            itemPicture.classList.add("itemPicture", "freshRoll"+m+"Picture");
+        let itemDescription = document.createElement("div");
+            itemDescription.classList.add("itemDescription", "freshRoll"+m+"Description");
+            itemDescription.innerHTML = "<b>Inside:</b>"+freshRollsArray[m].inside+"<br><b>Outside:</b>"+freshRollsArray[m].outside;
+        menuItemContainer.append(itemName, itemPicture, itemDescription);
+        menuItemContainerArray.push(menuItemContainer);
+        menuContainerArray[1].appendChild(menuItemContainer);
     }
     for(let n=0;n<tempuraRollsArray.length;n++){
-        menuContainerArray[2].appendChild(menuItemContainerArray.shift());
+        let menuItemContainer = document.createElement("div");
+            menuItemContainer.className = "menuItemContainer";
+        let itemName = document.createElement("h3");
+            itemName.classList.add("itemName", "tempuraRoll"+n);
+            itemName.innerText = tempuraRollsArray[n].name;
+        let itemPicture = document.createElement("img");
+            itemPicture.classList.add("itemPicture", "tempuraRoll"+n+"Picture");
+        let itemDescription = document.createElement("div");
+            itemDescription.classList.add("itemDescription", "tempuraRoll"+n+"Description");
+            itemDescription.innerHTML = "<b>Inside:</b>"+tempuraRollsArray[n].inside+"<br><b>Outside:</b>"+tempuraRollsArray[n].outside;
+        menuItemContainer.append(itemName, itemPicture, itemDescription);
+        menuItemContainerArray.push(menuItemContainer);
+        menuContainerArray[2].appendChild(menuItemContainer);
     }
-    console.log(menuContainerArray);
+    for(let o=0;o<subMenusArray.length;o++){
+        subMenusArray[o].appendChild(menuContainerArray[o]);
+        menuPageContainer.appendChild(subMenusArray[o]);
+    }
+    pageContent.appendChild(menuPageContainer);
 }
 
 
