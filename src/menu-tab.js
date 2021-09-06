@@ -374,7 +374,16 @@ export default function menuPage(){
         menuItemContainerArray.push(menuItemContainer);
     }
     //append proper number of menuItemContainer's to each menuContainer based on the number of items contained within the sushi roll arrays
-    
+    for(let l=0;l<bakedRollsArray.length;l++){
+        menuContainerArray[0].appendChild(menuItemContainerArray.shift());
+    }
+    for(let m=0;m<freshRollsArray.length;m++){
+        menuContainerArray[1].appendChild(menuItemContainerArray.shift());
+    }
+    for(let n=0;n<tempuraRollsArray.length;n++){
+        menuContainerArray[2].appendChild(menuItemContainerArray.shift());
+    }
+    console.log(menuContainerArray);
 }
 
 
