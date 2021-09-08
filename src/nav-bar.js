@@ -23,6 +23,7 @@ export default function loadNavBar(){
     navBarButtons[3].classList.add("orderNowButton");
     navBarButtons[3].innerText = "Order Now";
     navBarButtons[3].setAttribute("href", "https://direct.chownow.com/order/25088/locations/37077");
+    navBarButtons[3].setAttribute("target", "_blank");
 
     navBarButtons.forEach(button => {
         navBarLinks.appendChild(button);
