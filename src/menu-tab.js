@@ -452,18 +452,6 @@ export default function menuPage(){
         subMenusArray[j].appendChild(subMenuTitlesArray[j]);
     }
 
-    // for(let k=0;k<(bakedRollsArray.length+freshRollsArray.length+tempuraRollsArray.length);k++){
-    //     let menuItemContainer = document.createElement("div");
-    //         menuItemContainer.className = "menuItemContainer";
-    //     let itemName = document.createElement("h3");
-    //         itemName.classList.add("itemName", "item"+k+"Name");
-    //     let itemPicture = document.createElement("img");
-    //         itemPicture.classList.add("itemPicture", "item"+k+"Picture");
-    //     let itemDescription = document.createElement("div");
-    //         itemDescription.classList.add("itemDescription", "item"+k+"Description");
-    //     menuItemContainer.append(itemName, itemPicture, itemDescription);
-    //     menuItemContainerArray.push(menuItemContainer);
-    // }
 //-----------------------------------transfer data from array of objects into html elements------------------------------
     for(let l=0;l<bakedRollsArray.length;l++){
         let menuItemContainer = document.createElement("div");
@@ -517,6 +505,7 @@ export default function menuPage(){
         subMenusArray[o].appendChild(menuContainerArray[o]);
         menuPageContainer.appendChild(subMenusArray[o]);
     }
+    pageContent.innerHTML = "";
     pageContent.appendChild(menuPageContainer);
 }
 

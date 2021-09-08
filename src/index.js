@@ -5,8 +5,8 @@ import contactPage from "./info-tab.js";
 import menuPage from "./menu-tab.js";
 
 loadNavBar();
-// initialPageLoad();
-menuPage();
+initialPageLoad();
+
 
 //------------------------------------------------------------------Navbar Tab Click Event Listeners-------------------------------------------
 
@@ -21,6 +21,7 @@ let homeButton = document.querySelector(".homeButton");
 let menuButton = document.querySelector(".menuButton");
     menuButton.addEventListener("click", function(){
         //function that loads menu page
+        menuPage();
     });
 let infoButton = document.querySelector(".infoButton");
     infoButton.addEventListener("click", function(){
