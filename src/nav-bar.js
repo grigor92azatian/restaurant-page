@@ -1,7 +1,7 @@
 export default function loadNavBar(){
     let navBar = document.querySelector("#navBar");
     let logo = document.createElement("img");
-        logo.setAttribute("src", "../src/images/logo.png");
+        logo.setAttribute("src", "images/logo.png");
         logo.setAttribute("alt", "Company Logo");
         logo.setAttribute("width", "400");
     let navBarLinks = document.createElement("div");
