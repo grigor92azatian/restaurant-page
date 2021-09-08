@@ -5,7 +5,8 @@ import contactPage from "./info-tab.js";
 import menuPage from "./menu-tab.js";
 
 loadNavBar();
-initialPageLoad();
+// initialPageLoad();
+menuPage();
 
 
 
