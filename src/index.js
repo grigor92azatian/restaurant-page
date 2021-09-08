@@ -5,8 +5,8 @@ import contactPage from "./info-tab.js";
 import menuPage from "./menu-tab.js";
 
 loadNavBar();
-// initialPageLoad();
-menuPage();
+initialPageLoad();
+
 
 
 //------------------------------------------------------------------Navbar Tab Click Event Listeners-------------------------------------------
