@@ -35,7 +35,7 @@ export default function contactPage(){
     sectionArray[3].className = "text";
     sectionArray[3].innerHTML = '21230 Devonshire St <br>'+
                                 'Chatsworth, CA 91311'+
-                                '<a class="directions info" href="https://g.page/hikarisushichatsworth?share" target="_blank"><img width="100" src="../dist/images/directions-icon.png" alt="direction arrow icon"></a>';
+                                '<a class="directions info" href="https://g.page/hikarisushichatsworth?share" target="_blank"><img width="100" src="images/directions-icon.png" alt="direction arrow icon"></a>';
     sectionArray[4].className = "text";
     sectionArray[4].innerHTML = "818-998-8080";
     sectionArray[5].className = "text";

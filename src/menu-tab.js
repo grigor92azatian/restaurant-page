@@ -461,7 +461,7 @@ export default function menuPage(){
             itemName.innerText = bakedRollsArray[l].name;
         let itemPicture = document.createElement("img");
             itemPicture.classList.add("itemPicture", "bakedRoll"+l+"Picture");
-            itemPicture.src = "../dist/images/"+bakedRollsArray[l].picture+"Roll.PNG";
+            itemPicture.src = "images/"+bakedRollsArray[l].picture+"Roll.PNG";
         let itemDescription = document.createElement("div");
             itemDescription.classList.add("itemDescription", "bakedRoll"+l+"Description");
             itemDescription.innerHTML = "<b>Inside:</b>"+bakedRollsArray[l].inside+"<br><b>Outside:</b>"+bakedRollsArray[l].outside;
@@ -477,7 +477,7 @@ export default function menuPage(){
             itemName.innerText = freshRollsArray[m].name;
         let itemPicture = document.createElement("img");
             itemPicture.classList.add("itemPicture", "freshRoll"+m+"Picture");
-            itemPicture.src = "../dist/images/"+freshRollsArray[m].picture+"Roll.PNG";
+            itemPicture.src = "images/"+freshRollsArray[m].picture+"Roll.PNG";
         let itemDescription = document.createElement("div");
             itemDescription.classList.add("itemDescription", "freshRoll"+m+"Description");
             itemDescription.innerHTML = "<b>Inside:</b>"+freshRollsArray[m].inside+"<br><b>Outside:</b>"+freshRollsArray[m].outside;
@@ -493,7 +493,7 @@ export default function menuPage(){
             itemName.innerText = tempuraRollsArray[n].name;
         let itemPicture = document.createElement("img");
             itemPicture.classList.add("itemPicture", "tempuraRoll"+n+"Picture");
-            itemPicture.src = "../dist/images/"+tempuraRollsArray[n].picture+"Roll.PNG";
+            itemPicture.src = "images/"+tempuraRollsArray[n].picture+"Roll.PNG";
         let itemDescription = document.createElement("div");
             itemDescription.classList.add("itemDescription", "tempuraRoll"+n+"Description");
             itemDescription.innerHTML = "<b>Inside:</b>"+tempuraRollsArray[n].inside+"<br><b>Outside:</b>"+tempuraRollsArray[n].outside;
